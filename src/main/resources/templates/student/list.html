@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+</head>
+<body>
+<h1>Hello account</h1>
+<ul>
+    <li th:each="account : ${listStudent}">
+        <span th:text="${account.name} + ' - ' + ${account.email}"></span>
+    </li>
+</ul>
+</body>
+</html>
